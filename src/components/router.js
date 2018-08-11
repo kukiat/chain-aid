@@ -6,7 +6,7 @@ import React from 'react'
 export default () => {
   return (
     <Switch>
-      <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/manage" component={Manage} />
       {/* <Route component={NotFoundPage} /> */}
     </Switch>

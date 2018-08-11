@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Router from './components/router'
-import Manage from './components/dashboard/Manage'
+import Router from './components/router'
+import { BrowserRouter } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Manage/>
-      </div>
+      <BrowserRouter>
+        <Router/>
+      </BrowserRouter>
+        
     );
   }
 }
