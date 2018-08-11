@@ -13,27 +13,27 @@ export default class Navigation extends React.Component {
         </Link>
         <Link className="wrap-btn" to="/">
           <div className="navigation-btn">
-            <p>HomeNaja</p>
+            <p>สิทธิการรักษา</p>
           </div>
         </Link>
         <Link className="wrap-btn" to="/">
           <div className="navigation-btn">
-            <p>HomeNaja</p>
+            <p>ประวัติการรักษา</p>
           </div>
         </Link>
         <Link className="wrap-btn" to="/">
           <div className="navigation-btn">
-            <p>HomeNaja</p>
+            <p>ประวัติการจ่ายยา</p>
           </div>
         </Link>
         <Link className="wrap-btn" to="/">
           <div className="navigation-btn">
-            <p>HomeNaja</p>
+            <p>ครอบครัว</p>
           </div>
         </Link>
         <Link className="wrap-btn" to="/">
           <div className="navigation-btn">
-            <p>HomeNaja</p>
+            <p>จัดการข้อมูลผู้ป่วย</p>
           </div>
         </Link>
       </div>
