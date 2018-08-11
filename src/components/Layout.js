@@ -4,10 +4,12 @@ import Navigation from './navigation/Navigation'
 
 export const Layout = (Compo) => () => {
   return (
-    <div>
+    <div className="container-fluid">
       <Nav/>
-      <Navigation/>
-      <Compo/>
+      <div className="row">
+        <Navigation/>
+        <Compo/>
+      </div>
     </div>
   )
 }
