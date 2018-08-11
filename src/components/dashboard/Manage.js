@@ -1,8 +1,5 @@
 import React from 'react';
 import { Layout } from '../Layout';
-import Nav from '../navbar/Nav';
-import Navigation from '../navigation/Navigation';
-import classNames from 'classnames';
 
 class Manage extends React.Component {
   render() {
