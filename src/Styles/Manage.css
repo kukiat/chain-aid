@@ -1,3 +1,33 @@
 .Manage {
   height: 1000px;
 }
+
+.form {
+  padding: 30px;
+}
+
+hr {
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom: 2px solid rgba(0,0,0,.1);
+  margin-top: -3px;
+}
+input.input-200 {
+  margin-left: 20px;
+  display: inline-block;
+  width: 200px;
+}
+input.input-150 {
+  margin-left: 20px;
+  display: inline-block;
+  width: 150px;
+}
+input.input-100 {
+  margin-left: 20px;
+  display: inline-block;
+  width: 100px;
+}
+input.input-50 {
+  margin-left: 20px;
+  display: inline-block;
+  width: 50px;
+}
