@@ -1,14 +1,20 @@
 .navbar {
   background-color: #FC4D9A;
-  color: #FFF;
+  color: #FFF !important;
 }
 .nav-container {
   display: flex;
+  justify-content: center;
 }
 .imgg {
+  cursor: pointer;
   border-radius: 50%;
   border: 1px solid rgb(252, 251, 251);
 }
 .nav-item {
-  margin-left: 10px;
+  margin-left: 25px;
+  color: #FFF;
+}
+.navavav {
+  padding-top: 5px;
 }
