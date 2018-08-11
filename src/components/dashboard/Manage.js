@@ -8,8 +8,6 @@ class Manage extends React.Component {
   render() {
     return (
       <div className="Manage">
-        <Nav />
-        <Navigation />
         <div className="row">
           <div className="col-md-8 col-sm" style={{ backgroundColor: 'red', height: '1000px' }}>
           
@@ -23,5 +21,4 @@ class Manage extends React.Component {
   }
 }
 
-// export default Layout(Manage)
-export default Manage;
+export default Layout(Manage)
