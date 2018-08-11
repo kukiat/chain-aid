@@ -7,13 +7,10 @@ class Manage extends React.Component {
   render() {
     return(
       <div>
-        <Nav/>
-        <Navigation/>
         Manage
       </div>
     )
   }
 }
 
-// export default Layout(Manage)
-export default Manage
+export default Layout(Manage)

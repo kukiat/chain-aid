@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Nav from './navbar/Nav'
 import Navigation from './navigation/Navigation'
 
-export const Layout = (Comp) => {
+export const Layout = (Compo) => () => {
   return (
     <div>
       <Nav/>
       <Navigation/>
-      <Comp/>
+      <Compo/>
     </div>
   )
 }
