@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 export default class Navigation extends React.Component {
   render() {
     return(
-      <div>
+      <div className="btn-group-vertical">
         <Link to="/">
-          <div>HomeButton</div>
+        <div>ManageButton</div>
         </Link>
         <Link to="/manage">
           <div>ManageButton</div>
