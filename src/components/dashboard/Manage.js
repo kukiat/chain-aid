@@ -40,7 +40,7 @@ class Manage extends React.Component {
               </div>
             </div>
             <div className="inline" style={{marginLeft: '20vw'}}>
-              <div style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '50%' }}></div>
+              <div style={{ height: '120px', width: '120px', backgroundColor: 'red', borderRadius: '50%' }}></div>
             </div>
             <div style={{ width: '100%', padding: '20px' }}>
               <h4>ข้อมูลส่วนตัว</h4>
