@@ -1,0 +1,25 @@
+.navigation{
+  text-align: center;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.navigation-btn {
+  margin-bottom: 1px;
+  background-color: #FC4D9A; 
+  height: 40px;
+  padding-top: 8px;
+  transition: background 0.5s;
+}
+.navigation-btn p{
+  text-decoration: none;
+  color: #FFF;
+} 
+p:hover {
+  text-decoration: none;
+}
+.wrap-btn:hover {
+  text-decoration: none !important;
+}
+.navigation-btn:hover {
+  background-color: #ed3887; 
+}
