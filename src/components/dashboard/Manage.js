@@ -1,9 +1,19 @@
 import React from 'react'
+import { Layout } from '../Layout'
+import Nav from '../navbar/Nav'
+import Navigation from '../navigation/Navigation'
 
-export default class Manage extends React.Component {
+class Manage extends React.Component {
   render() {
     return(
-      <div>Manage</div>
+      <div>
+        <Nav/>
+        <Navigation/>
+        Manage
+      </div>
     )
   }
 }
+
+// export default Layout(Manage)
+export default Manage
