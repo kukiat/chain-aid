@@ -7,8 +7,8 @@ export default class Nav extends React.Component {
     return(
       <nav className="navbar">
         <div className="nav-container">
-          <img src = {logo} />
-          <h4>Chain-AID: The Electric Medical Record on Blockchain</h4>
+          <img className="nav-item imgg" src = {logo} width="34" height="34"/>
+          <h4 className="nav-item">Chain-AID: The Electric Medical Record on Blockchain</h4>
         </div>
       </nav>
     )
