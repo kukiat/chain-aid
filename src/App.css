@@ -26,3 +26,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.header-pink {
+  background-color: "#FC4D9A";
+}
+.navbar-pink {
+  background-color: "#FEC6DF";
+}
+.navbar-yellow {
+  background-color: "#FDFF68";
+}
+.text-pink {
+  color: "#FB0910";
+}
