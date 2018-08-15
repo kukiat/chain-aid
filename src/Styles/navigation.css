@@ -5,6 +5,7 @@
   border-right: 5px solid #f8f8f8;
 }
 .navigation-btn {
+  border-radius: 2px;
   margin-top: 3px;
   background-color: #FC4D9A; 
   height: 40px;
@@ -24,3 +25,6 @@ p:hover {
 .navigation-btn:hover {
   background-color: #ed3887; 
 }
+ .left {
+   margin-left: 3.5%;
+ }

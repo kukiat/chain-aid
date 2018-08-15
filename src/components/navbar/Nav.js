@@ -8,9 +8,11 @@ export default class Nav extends React.Component {
     return(
       <nav className="navbar">
         <div className="nav-container">
-          <Link to="/">
-            <img className="nav-item imgg" src = {logo} width="34" height="34"/>
-          </Link>
+          <div>
+            <Link to="/">
+              <img className="imgg" src = {logo} width="34" height="34"/>
+            </Link>
+          </div>
           <div className="navavav">
             <div className="nav-item">Chain-AID: The Electric Medical Record on Blockchain</div>
           </div>
