@@ -24,9 +24,9 @@ class Manage extends React.Component {
   age(birthday){
       let textArr = birthday.split('-')
       let dob = new Date(textArr[2]-543, textArr[1], textArr[0])
-      let diff_ms = Date.now() - dob.getTime();
-      let age_dt = new Date(diff_ms); 
-      return Math.abs(age_dt.getUTCFullYear() - 1970);
+      let diff_ms = Date.now() - dob.getTime()
+      let age_dt = new Date(diff_ms)
+      return String(Math.abs(age_dt.getUTCFullYear() - 1970))
   }
   render() {
     return (
