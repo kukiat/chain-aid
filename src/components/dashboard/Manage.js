@@ -11,13 +11,12 @@ class Manage extends React.Component {
     };
   }
   componentDidMount(){
-    fetch('https://chain-aid-api.herokuapp.com/api/manage/?cardid=5704062616518').
-    then(response => response.json()).
-    then(result => {
-      this.setState({ data: result.results[0]})})
+    fetch('https://chain-aid-api.herokuapp.com/api/manage/?cardid=5704062616518')
+    .then(response => response.json())
+    .then(result => {this.setState({ data: result.results[0]})})
   }
   show(value, value2){
-    if (this.state.data[value2] != undefined){
+    if (this.state.data[value2] !== undefined){
       return  this.state.data[value2][value]
     }
     return ""
