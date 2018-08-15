@@ -1,7 +1,5 @@
 import React from 'react';
 import { Layout } from '../Layout';
-import Nav from '../navbar/Nav';
-import Navigation from '../navigation/Navigation';
 import '../../Styles/Manage.css';
 
 class Manage extends React.Component {
@@ -14,7 +12,7 @@ class Manage extends React.Component {
   render() {
     return (
       <div className="manage col-md-10">
-        <div className="row">
+        <div className="row mg0">
           <div
             className="col-md-11 col-sm form"
             style={{height: '1000px' }}
