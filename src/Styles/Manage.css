@@ -50,3 +50,6 @@ input.input-50 {
 .btnjas:hover{
   background-color: rgb(248, 16, 117);
 }
+.spin-loading {
+  margin: 6em auto;
+}
