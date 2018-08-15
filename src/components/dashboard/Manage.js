@@ -138,7 +138,7 @@ class Manage extends React.Component {
               <div style={{ marginLeft: '30px' }}>
                 <div>
                   <h5>ที่อยู่ปัจจุบัน</h5>
-                  <textarea cols="80" rows="4">{this.show("address","patientInformation")}</textarea>
+                  <textarea cols="80" rows="4" value={this.show("address","patientInformation")}></textarea>
                 </div>
                 <div style={{marginTop: '20px'}}>
                   <h5 className="inline">โทรศัพท์</h5>
