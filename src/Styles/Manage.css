@@ -31,4 +31,7 @@ input.input-50 {
   display: inline-block;
   width: 50px;
 }
+.spin-loading {
+  margin: 6em auto;
+}
 
