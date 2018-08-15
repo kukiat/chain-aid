@@ -8,6 +8,7 @@
   border-radius: 2px;
   margin-top: 3px;
   background-color: #FC4D9A; 
+  margin-top: 3px;
   height: 40px;
   padding-top: 8px;
   transition: background 0.5s;
@@ -22,8 +23,8 @@ p:hover {
 .wrap-btn:hover {
   text-decoration: none !important;
 }
-.navigation-btn:hover {
-  background-color: #ed3887; 
+.wrap-btn-active .navigation-btn{
+  background-color: rgb(209, 19, 101); 
 }
 .left {
    margin-left: 18px;
