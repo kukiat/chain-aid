@@ -49,6 +49,6 @@ export default class Navigation extends React.Component {
           </Link>
         </div>
       </div>
-    );
+    )
   }
 }
