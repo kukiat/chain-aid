@@ -7,7 +7,7 @@ export const Layout = (Compo) => () => {
     <div className="container-fluid pd0">
         <Nav/>
       
-      <div className="row">
+      <div className="row Gtgte">
         <Navigation/>
         <Compo/>
       </div>

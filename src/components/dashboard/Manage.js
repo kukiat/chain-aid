@@ -11,7 +11,7 @@ class Manage extends React.Component {
   }
   render() {
     return (
-      <div className="manage col-md-10">
+      <div className="mgl-auto col-md-10">
         <div className="row mg0">
           <div
             className="col-md-11 col-sm form"

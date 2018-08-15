@@ -4,7 +4,7 @@ import {Layout} from '../Layout'
 class Home extends React.Component {
   render() {
     return(
-      <div>Home</div>
+      <div className="mgl-auto col-md-10">Home</div>
     )
   }
 }
