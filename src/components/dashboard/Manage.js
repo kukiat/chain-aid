@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout } from '../Layout';
 import { Loading } from './Loading'
 import '../../Styles/Manage.css';
+import axios from 'axios'
 
 class Manage extends React.Component {
   constructor() {
@@ -14,14 +15,17 @@ class Manage extends React.Component {
   }
 
   componentDidMount(){
-    fetch('https://chain-aid-api.herokuapp.com/api/manage/?cardId=5704062616518')
-      .then(response => response.json())
-      .then(({ results }) => {
+    const url = 'https://chain-aid-api.herokuapp.com/api/manage/?cardId=5704062616544'
+    axios.get(url)
+      .then(({ data }) => {
+        console.log(data)
+        const { results } = data
         this.setState({ 
           data: results,
           isLoading: false
         })
       })
+      .catch(err => console.log(err))
   }
 
   handleManageId = (e) => {
@@ -45,12 +49,44 @@ class Manage extends React.Component {
     })
   }
   
+  onSubmitForm = () => {
+    const { id, manageId, patientInformation, personalInfo, createdAt } = this.state.data
+    const body = {
+      "patientId": manageId.patientId,
+      "cardId": manageId.cardId,
+      "alienId": manageId.alienId,
+      "name": personalInfo.name,
+      "surname": personalInfo.surname,
+      "nickname": personalInfo.nickname,
+      "gender": personalInfo.gender,
+      "birthday": personalInfo.birthday,
+      "height": personalInfo.nickname,
+      "weight": personalInfo.weight,
+      "bloodType": personalInfo.bloodType,
+      "nation": personalInfo.nation,
+      "race": personalInfo.race,
+      "religion": personalInfo.religion,
+      "congenital": personalInfo.congenital,
+      "allergyDrug": personalInfo.allergyDrug,
+      "contact": personalInfo.contact,
+      "address": patientInformation.address,
+      "tel": patientInformation.tel,
+      "email": patientInformation.email,
+      "updatedAt": `${new Date().toLocaleDateString()}-${new Date().toLocaleTimeString()}`,
+      "createdAt": createdAt
+    }
+    const url = `https://chain-aid-api.herokuapp.com/api/manage/${id}`
+    axios.patch(url, body)
+      .then(res => console.log(res.data.message))
+      .catch(err => console.log(err))
+  }
+
   render() {
     const { data, isLoading } = this.state
     console.log(data)
     return (
       <div className="mgl-auto col-md-10">
-            <div className="row mg0">
+          <div className="row mg0">
             { isLoading ? <Loading/> :
               <div className="col-md-11 col-sm form" style={{height: '1000px' }}>
                 <div>
@@ -289,6 +325,7 @@ class Manage extends React.Component {
                         onChange={this.handlePatientInformation} 
                         name="email"
                       />
+                      <button onClick={ this.onSubmitForm}>Save</button>
                     </div>
                   </div>
                 </div>
