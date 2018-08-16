@@ -31,7 +31,25 @@ input.input-50 {
   display: inline-block;
   width: 50px;
 }
+.gg{
+  position: absolute;
+  left: 40%;
+}
+.btnjas {
+  background-color: #FC4D9A;
+  border: none;
+  border-radius: 2px;
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.btnjas:hover{
+  background-color: rgb(248, 16, 117);
+}
 .spin-loading {
   margin: 6em auto;
 }
-

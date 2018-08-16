@@ -329,6 +329,9 @@ class Manage extends React.Component {
                     </div>
                   </div>
                 </div>
+                <div className="gg">
+                  <button className="btnjas">แก้ไข</button>
+                </div>
               </div>
             }
             </div>
