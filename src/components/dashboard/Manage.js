@@ -15,10 +15,9 @@ class Manage extends React.Component {
   }
 
   componentDidMount(){
-    const url = 'https://chain-aid-api.herokuapp.com/api/manage/?cardId=5704062616544'
+    const url = 'https://chain-aid-api.herokuapp.com/api/manage/?cardId=1141100080578'
     axios.get(url)
       .then(({ data }) => {
-        console.log(data)
         const { results } = data
         this.setState({ 
           data: results,
@@ -77,7 +76,7 @@ class Manage extends React.Component {
     }
     const url = `https://chain-aid-api.herokuapp.com/api/manage/${id}`
     axios.patch(url, body)
-      .then(res => console.log(res.data.message))
+      .then(res => console.log(res))
       .catch(err => console.log(err))
   }
 
@@ -95,40 +94,42 @@ class Manage extends React.Component {
                     แก้ไขครั้งล่าสุดเมื่อ {this.state.lastModifile}
                   </span>
                 </div>
+                <div style={{display: 'flex'}}>
                 <div style={{ padding: '10px 30px' }} className="inline">
-                  <div style={{ marginTop: '10px' }}>
-                    <h5 className="inline">หมายเลขประจำตัวผู้ป่วย</h5>
-                    <input 
-                      type="text" 
-                      onChange={this.handleManageId} 
-                      className="input-200" 
-                      value={data.manageId.patientId}
-                      name="patientId"
-                    />
-                  </div>
-                  <div style={{ marginTop: '10px' }}>
-                    <h5 className="inline">หมายเลขประจำตัวประชาชน</h5>
-                    <input 
-                      type="text" 
-                      onChange={this.handleManageId} 
-                      className="input-200" 
-                      value={data.manageId.cardId}
-                      name="cardId"
-                    />
-                  </div>
-                  <div style={{ marginTop: '10px' }}>
-                    <h5 className="inline">หมายเลขประจำตัวต่างด้าว</h5>
-                    <input 
-                      type="text" 
-                      onChange={this.handleManageId} 
-                      className="input-200" 
-                      value={data.manageId.alienId}
-                      name="alienId"
-                    />
-                  </div>
-                </div>
-                <div className="inline" style={{marginLeft: '20vw'}}>
-                  <div style={{ height: '120px', width: '120px', backgroundColor: 'red', borderRadius: '50%' }}></div>
+                <div style={{ marginTop: '10px' }}>
+                                    <h5 className="inline">หมายเลขประจำตัวผู้ป่วย</h5>
+                                    <input 
+                                      type="text" 
+                                      onChange={this.handleManageId} 
+                                      className="input-200" 
+                                      value={data.manageId.patientId}
+                                      name="patientId"
+                                    />
+                                  </div>
+                                  <div style={{ marginTop: '10px' }}>
+                                    <h5 className="inline">หมายเลขประจำตัวประชาชน</h5>
+                                    <input 
+                                      type="text" 
+                                      onChange={this.handleManageId} 
+                                      className="input-200" 
+                                      value={data.manageId.cardId}
+                                      name="cardId"
+                                    />
+                                  </div>
+                                  <div style={{ marginTop: '10px' }}>
+                                    <h5 className="inline">หมายเลขประจำตัวต่างด้าว</h5>
+                                    <input 
+                                      type="text" 
+                                      onChange={this.handleManageId} 
+                                      className="input-200" 
+                                      value={data.manageId.alienId}
+                                      name="alienId"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="inline" style={{marginLeft: '20vw'}}>
+                                  <img src={require('./avatar.png')} width="150" height="150" style={{ borderRadius: '50%' }}/>
+                                </div>
                 </div>
                 <div style={{ width: '100%', padding: '20px' }}>
                   <h4>ข้อมูลส่วนตัว</h4>
@@ -325,12 +326,11 @@ class Manage extends React.Component {
                         onChange={this.handlePatientInformation} 
                         name="email"
                       />
-                      <button onClick={ this.onSubmitForm}>Save</button>
                     </div>
                   </div>
                 </div>
                 <div className="gg">
-                  <button className="btnjas">แก้ไข</button>
+                  <button className="btnjas" onClick={ this.onSubmitForm}>แก้ไข</button>
                 </div>
               </div>
             }
